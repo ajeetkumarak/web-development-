@@ -1,0 +1,52 @@
+h1{
+    background-color: rgb(41, 6, 46);
+    color: rgb(126, 87, 163);
+}
+a, input{
+    margin: 30px 10px;
+    padding: 10px 0;
+    text-align: center ;
+}
+*{
+text-align: center;
+}
+.big-title{
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+    color: fuchsia;
+    background-color: rgb(20, 58, 58);
+    border-radius: 8px;
+    border: 2px solid rgb(203, 174, 7);
+    padding: 2px;
+}
+.margin-50{
+    margin: 50px;
+    padding: 50px;
+}
+img{
+    width: 100vw;
+}
+h2{
+    width: 350px;
+    height: 50px;
+    border: 2px solid silver;
+    background-color: rgb(251, 165, 179);
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 32px;
+
+}
+.paragraph, .paragraph-button{
+    background-color: rgb(205, 142, 152);
+    color: black;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 3%;
+}

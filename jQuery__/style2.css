@@ -1,0 +1,45 @@
+
+body{
+    background-color: #011F3F;
+    text-align: center;
+}
+h1{
+    font-family: 'Risque', cursive;
+    font-size: 80px;
+    margin: 3%;
+    color: #FEF2BF;
+}
+.container{
+    width: 50%;
+    margin: auto;
+
+}
+.btn{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+} 
+
+
+
+
+
+/* javascript classes style */
+.box-design{
+    
+}
