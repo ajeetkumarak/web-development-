@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet \ fly</title>
+    <style>
+        :root{
+            --primary-color: purple;
+            --secondary-color: skyblue;
+            --danger-color: yellow;
+            --max-w: 233px;
+        }
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Kdam+Thmor+Pro&family=Pacifico&family=Tajawal&display=swap');
+       
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Crimson Text', serif;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Tajawal', sans-serif;
+
+        }
+       header::before{
+        content: '';
+        background: url('https://source.unsplash.com/OqOhYRjn_JY') ;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0.88;
+
+       }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+        }
+        li.item{
+            list-style: none;
+            padding: 22px 23px;
+        } 
+        section{
+            margin: 102px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid silver;  
+            border-radius: 10px;     
+            justify-content: center;
+         }
+
+        section::before{
+            content: "this is your content";
+            
+
+        }
+        h3{
+            font-size: 58px;
+            font-weight: bolder;
+            color: rgb(13, 174, 238);
+        }
+        p{
+            color: rgb(11, 247, 247);
+        }
+        .container{
+            display: flex;
+
+        }
+        .card ,p{
+            padding: 23px 15px;
+            border: 2px solid rgb(53, 36, 53);
+            border-radius: 10px;
+            margin: 23px 12px;
+            color: khaki;
+        }
+        p.card{
+            border: 2px solid fuchsia;
+            border-radius: 10px;
+        }
+        div.card{
+            background-color: rgb(23, 92, 137);
+            /* box-shadow:offset-x offset-y blur-radius spread-radius color */
+            box-shadow: 13px 16px  skyblue;
+            box-shadow: -10px -15px 10px rgb(7, 180, 248);
+            box-shadow: -7px -9px 10px 4px purple;
+            box-shadow: 15px 20px 2px 5px rgba(244, 154, 384, 0.4);
+            /* inset */
+            box-shadow: inset 27px 100px rgb(7, 180, 248),
+                         inset -30px -48px rgb(144, 182, 182);
+        }
+        .card h2{
+            text-shadow: 9px 16px rgb(30, 0, 255);
+            text-shadow: 12px 18px 5px rgb(8, 45, 60);
+            text-shadow: -10px -15px 4px rgb(21, 8, 21);
+        }
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* --box-color:skyblue; */
+            background-color: var(--secondary-color);
+            margin: auto;
+            max-width: var(--maxw);
+        }
+        .box{
+            --box-color:rgb(50, 143, 148);
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid silver;
+            border-radius: 15px;
+            margin: 2px 9px;
+            box-shadow: 5px 9px var(--box-color);
+        }
+        .animation{
+            display: flex;
+            color: rgb(54, 33, 5);
+            background-color: rgb(25, 81, 84);
+
+        }
+        .content{
+            background-color: mediumturquoise;
+            width: 250px;
+            height: 250px;
+            border-radius: 40%;
+            position: relative;
+            animation-name: ajeet2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+        }
+        @keyframes ajeet2 {
+            0%{
+            top: -250px;
+            left: 0;
+            }
+            25%{
+            top: -250px;
+            left: 250px;
+            }
+            65%{
+            top: 0px;
+            left: 0px;
+            }
+            100%{
+            top: 0px;
+            left: 250px;
+            }
+        }
+        @keyframes ajeet {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 1400px;
+            }
+        }
+        .transition{
+            display: flex;
+            background-color: rgb(3, 75, 75);
+        }
+    #transition{
+        display: flex;
+        margin-left: 15px;
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        color: rgb(248, 30, 248);
+        align-items: center;
+        justify-content: center;
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        transition: color 2s ease-out 1s;
+        transition: font-size 2s ease-in-out 1s;
+        transition: all 2s ease-in-out 0.2s;   
+     }
+    #transition:hover{
+        background-color: rgb(73, 12, 73);
+        color: rgb(118, 216, 14);
+        font-size: 55px;
+        border-radius: 45px;
+        height: 250px;
+        box-shadow: 12px 17px indigo;
+        transform: rotate(-45deg);
+        transform: scale(2);
+        /* transform: translate(120px,200px); */
+
+
+
+    }
+    .transform{
+        display: flex;
+        background-color: rgb(93, 6, 174);
+        justify-content: center;
+        align-items: center;
+    }
+    #transform{
+        background-color: rgb(49, 27, 50);
+        border: 2px solid silver;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 400px;
+        transform: rotate(45deg);
+        transition: all 3s ease-in-out ;
+    }
+    #transform:hover{
+        transform: rotate(405deg);
+        /* transform: skew(-45deg);
+        transform: scale(2); */
+        transform: translateY(400px);
+        transform: translateX(400px);
+        background-color: skyblue;
+        color: rgb(198, 21, 110);
+        font-size: 100px;
+
+    }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li class="item">Home</li>
+            <li class="item">Extensions</li>
+            <li class="item">Selection </li>
+            <li class="item">View</li>
+            <li class="item">Terminal</li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <h3>Welcome to coding world</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A rerum dolores debitis, quae et incidunt reprehenderit harum odit, eum pariatur ratione dicta voluptatibus, nulla obcaecati officia autem nihil cumque molestias? Temporibus aliquid animi, quia qui amet veritatis ex soluta! Odit placeat ullam incidunt labore veritatis, itaque dolore quisquam quod vitae exercitationem ducimus.</p>
+</section>
+<div class="container">
+    <div class="card" id="1">
+       <h2> This is C++ Course</h2>
+       <p class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure quasi alias quibusdam exercitationem, placeat atque voluptas veniam culpa obcaecati sit accusamus tempore consequuntur soluta sed, reiciendis voluptate in incidunt. Incidunt quo nam laudantium illo repudiandae.</p>
+    </div>
+    <div class="card" id="2">
+       <h2> This is HTML Course</h2>
+       <p class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure quasi alias quibusdam exercitationem, placeat atque voluptas veniam culpa obcaecati sit accusamus tempore consequuntur soluta sed, reiciendis voluptate in incidunt. Incidunt quo nam laudantium illo repudiandae.</p>
+    </div>
+    <div class="card" id="3">
+       <h2> Javascript Essential</h2>
+       <p class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat iure quasi alias quibusdam exercitationem, placeat atque voluptas veniam culpa obcaecati sit accusamus tempore consequuntur soluta sed, reiciendis voluptate in incidunt. Incidunt quo nam laudantium illo repudiandae.</p>
+    </div>
+
+</div>
+<div class="wrapper">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<footer>
+    <div class="animation">
+        <div class="content">
+            This is a box
+        </div>
+    </div>
+    <div class="transition">
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+        <div id="transition">
+            This is A box
+
+        </div>
+    </div>
+
+
+    <div class="transform">
+        <div id="transform">
+            This is Aj BOX
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

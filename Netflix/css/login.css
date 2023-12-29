@@ -1,0 +1,73 @@
+body {
+  color: white;
+  /* background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)),
+    url("netflixteaser.png"); */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)),
+    url("large.jpg");
+  background-size: contain;
+  font-family: sans-serif;
+}
+.container {
+  text-align: center;
+  border-radius: 5px;
+  padding: 60px;
+  margin: 70px auto;
+  width: 320px;
+  height: 420px;
+  background-color: black;
+  opacity: 0.8;
+}
+h1 {
+  margin-left: 25px;
+  text-align: left;
+}
+button {
+  cursor: pointer;
+  color: white;
+  width: 280px;
+  padding: 15px 60px;
+  background-color: red;
+  border-radius: 5px;
+  font-weight: bold;
+}
+input {
+  color: white;
+  font-size: 16px;
+  padding: 12px 40px;
+  border: 0;
+  border-radius: 2px;
+  background-color: rgb(29, 29, 29);
+  opacity: 1;
+}
+.signup {
+  text-align: left;
+  color: rgb(97, 96, 96);
+  margin: 60px 0px 0px 20px;
+}
+.protected {
+  text-align: left;
+  font-size: 12px;
+  margin: 0px 0px 0px 20px;
+}
+a {
+  text-decoration: none;
+}
+.checkbox,
+a {
+  cursor: pointer;
+  color: rgb(207, 207, 207);
+  font-size: 14px;
+}
+a.help {
+  margin: 0px 0px 0px 100px;
+  color: rgb(146, 146, 146);
+  font-size: 14px;
+}
+a.learnmore {
+  color: rgb(31, 31, 253);
+}
+.logo {
+  width: 170px;
+  height: 85px;
+  vertical-align: middle;
+}
